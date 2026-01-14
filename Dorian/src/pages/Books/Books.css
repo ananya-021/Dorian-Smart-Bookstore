@@ -1,0 +1,138 @@
+/* Page wrapper */
+.books-page {
+  padding: 70px 28px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #3f3f3f;
+  background: linear-gradient(#F5F5DC);
+}
+
+/* Main heading */
+.books-page h2 {
+  font-family: 'Curlz MT', cursive;
+  font-size: 3rem;
+  color: #D4AF37;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.45);
+}
+
+/* Books grid */
+.book-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+/* Book card */
+.book-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(250, 247, 242, 0.9)
+  );
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: left;
+  padding-bottom: 12px;
+}
+
+/* Hover – elegant lift */
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(212, 175, 55, 0.25);
+}
+
+/* Book cover */
+.book-card img {
+  width: 100%;
+  height: 250px; /* smaller than before to handle average quality covers */
+  object-fit: cover;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 12px 12px 0 0;
+}
+
+/* Book title */
+.book-card h3 {
+  margin: 14px 14px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3a3a3a;
+  line-height: 1.3;
+}
+
+/* Author */
+.book-card p {
+  margin: 0 14px 8px;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+/* Price */
+.book-card .price {
+  margin: 0 14px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #a9872e;
+}
+
+/* Actions container */
+.book-card .book-actions {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-top: auto;
+}
+
+/* Buttons – soft, inviting */
+.book-card .book-actions button {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: rgba(212, 175, 55, 0.05);
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f3f3f;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* Wishlist button */
+.book-card .book-actions button:first-child {
+  color: #a9872e;
+}
+
+.book-card .book-actions button:first-child:hover {
+  background: rgba(212, 175, 55, 0.18);
+}
+
+/* Cart button – romantic gold */
+.book-card .book-actions button:last-child {
+  background: linear-gradient(135deg, #e6c76a, #d4af37);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
+}
+
+.book-card .book-actions button:last-child:hover {
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.45);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .books-page h2 {
+    font-size: 2.3rem;
+  }
+
+  .book-card img {
+    height: 220px;
+  }
+}

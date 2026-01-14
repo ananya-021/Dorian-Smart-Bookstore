@@ -1,0 +1,101 @@
+.hero{
+  position: relative;
+}
+.hero-banner{
+  padding: 10px;
+  width: 100%;
+}
+.hero-caption{
+  position: absolute;
+  top: 40%;
+  left: 45%;
+
+  font-size: 50px;
+  font-family: Curlz MT;
+  transform: translate(-40%, -45%);
+  color: #F5F5DC;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.feeling-section {
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.feeling-section textarea {
+  width: 100%;
+  height: 120px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+  font-size: 16px;
+  resize: none;
+  background: #fffaf0;
+}
+
+.feeling-section button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #2f2f2f;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.back-image-section {
+  position: relative;
+  width: 100%;
+  margin: 40px 0; /* space above and below */
+}
+
+.back-image {
+  width: 100%;        /* full screen width */
+  height: 250px;      /* limited height */
+  object-fit: cover;  /* maintain aspect ratio, crop if needed */
+  border-radius: 12px;
+}
+
+.quote-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the quote */
+  color: #0b0b0b;        /* white text */
+  text-align: center;
+  font-size: 28px;
+  font-family: "Times New Roman";
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* makes it readable over image */
+  padding: 0 20px;   /* some padding for mobile */
+  background:#F5F5DC;
+}
+
+
+.genre-section {
+  margin: 15px 0;
+}
+
+.genre-thumbnails {
+  display: flex;
+  flex-direction: column; /* stacked vertically */
+  align-items: center;
+  gap: 30px; /* more space between thumbnails */
+}
+
+.genre-thumb {
+  width: 500px; /* bigger width */
+  height: 300px; /* maintain aspect ratio */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.genre-thumb:hover {
+  transform: scale(2.15); /* larger zoom on hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+

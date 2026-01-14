@@ -1,0 +1,184 @@
+/* Cart Page */
+.cart-page {
+  padding: 70px 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: #3f3f3f;
+}
+
+/* Title */
+.cart-page h1 {
+  font-family: Curlz MT;
+  font-size: 3rem;
+  color: #D4AF37;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.35);
+}
+
+/* Cart list */
+.cart-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Cart item */
+.cart-item {
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(250, 247, 242, 0.95)
+  );
+  border-radius: 22px;
+  box-shadow:
+    0 12px 28px rgba(212, 175, 55, 0.18),
+    inset 0 0 0 1px rgba(212, 175, 55, 0.18);
+  overflow: hidden;
+  transition: all 0.45s ease;
+}
+
+/* Hover */
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 18px 42px rgba(212, 175, 55, 0.28),
+    inset 0 0 0 1px rgba(212, 175, 55, 0.28);
+}
+
+/* Book image */
+.cart-item img {
+  width: 190px;
+  height: 270px;
+  object-fit: cover;
+  border-right: 1px solid rgba(212, 175, 55, 0.18);
+  filter: saturate(0.95) contrast(0.95);
+}
+
+/* Details */
+.cart-details {
+  padding: 22px 26px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.cart-details h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3a3a3a;
+  margin-bottom: 6px;
+}
+
+/* Text */
+.cart-details p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+/* Rating */
+.cart-details .rating {
+  color: #c9a441;
+}
+
+/* Price */
+.cart-details .price {
+  font-weight: 500;
+  font-size: 16px;
+  color: #a9872e;
+}
+
+/* Quantity */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.quantity-selector button {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  background: transparent;
+  color: #a9872e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.quantity-selector button:hover {
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.quantity-selector input {
+  width: 44px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Subtotal */
+.subtotal {
+  font-weight: 500;
+  color: #5f5f5f;
+  margin-top: 6px;
+}
+
+/* Remove button */
+.remove-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: transparent;
+  color: #a9872e;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.remove-btn:hover {
+  background: rgba(212, 175, 55, 0.18);
+}
+
+/* Total section */
+.cart-total {
+  margin-top: 50px;
+  text-align: right;
+}
+
+.cart-total h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+/* Checkout button */
+.checkout-btn {
+  padding: 14px 30px;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    #e6c76a,
+    #d4af37
+  );
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.45);
+  transition: all 0.4s ease;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(212, 175, 55, 0.55);
+}

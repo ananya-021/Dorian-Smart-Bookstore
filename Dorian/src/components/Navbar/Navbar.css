@@ -1,0 +1,143 @@
+.navbar {
+  width: 100%;
+  padding: 12px 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+   background: #F5F5DC;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 100;
+}
+
+/* LEFT BRANDING */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGO */
+.navbar-logo {
+  width: 50px; /* smaller, elegant */
+  height: auto;
+}
+
+/* TEXT */
+.navbar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.15;
+}
+
+/* TITLE */
+.navbar-text h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  color: #36454F;
+}
+
+
+/* TAGLINE */
+.navbar-text h3 {
+  margin: 2px 0 0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #D4AF37;
+}
+
+/* RIGHT SECTION */
+.navbar-right {
+  margin-left: auto; /* pushes it to the far right */
+  display: flex;
+  align-items: center;
+  gap:14px;
+}
+
+/* SEARCH BAR CONTAINER */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* INPUT FIELD */
+.search-input {
+  padding: 10px 42px 10px 16px; /* space for icon on right */
+  border-radius: 999px;
+  border: 1.5px solid #D4AF37; /* classic gold outline */
+  background: #FAF9F6; /* off-white */
+  font-size: 1rem;
+  color: #36454F;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 220px;
+}
+
+/* FOCUS EFFECT */
+.search-input:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+/* SEARCH ICON */
+.search-icon {
+  position: absolute;
+  right: 10px;
+  width: 22x;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.search-icon:hover {
+  opacity: 1;
+}
+/* Wishlist Icon Button */
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 35px; /* slightly bigger */
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.icon-btn:hover .wishlist-icon {
+  transform: scale(1.1);
+  opacity: 1;
+}
+/* Login Button */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: transparent;
+  border: 1.5px solid #D4AF37;
+  border-radius: 999px;
+  color: #D4AF37;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+  transform: translateY(-1px);
+}
+
+.login-icon {
+  width: 22px;
+  height: 22px;
+}
