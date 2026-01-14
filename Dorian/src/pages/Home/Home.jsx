@@ -63,7 +63,7 @@ const Home = ({ setBooks }) => {
     }));
 
     setBooks(booksWithPrice);
-    navigate("books");
+    navigate("/books");
   } catch (err) {
     alert("Backend error");
   } finally {
